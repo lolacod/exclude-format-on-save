@@ -12,9 +12,9 @@ This formatter is a proxy formatter that uses other formatters commands, and doe
 
 ## Extension Settings
 
-As of verion 0.0.1 there is not explicit exposure of the needed configurations to VSCode, thus when updating the settings.json file, needed configurations might be greyed out, please ignore it for now. In order for the plugin to work the settings.json file, needs to be updated as shown in the example below:
+Currently there is not explicit exposure of the needed configurations to VSCode, thus when updating the settings.json file, configurations might be greyed out, please ignore. In order for the plugin to work, settings.json file needs to be updated in a similar way to the example below:
 
-At the top level a dictionary describing languages and it's *command* to execute:
+Dictionary describing languages and it's *command* to execute:
 
 ```json
   "lolacod.exclude-format-on-save.supportedLanguages": {
@@ -23,7 +23,7 @@ At the top level a dictionary describing languages and it's *command* to execute
   },
 ```
 
-Then in each of the language section, change or add the line: 
+Then in each of the language section, change or add the line, to make this extension be the default formatter.
 
 `editor.defaultFormatter": "lolacod.exclude-format-on-save"` 
 
@@ -38,7 +38,7 @@ Example:
 ```
 
 
-Example of possible `settings.json` file contents:
+Example of complete `settings.json` file contents:
 
 ```json
 {
